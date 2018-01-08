@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="swiper/css/swiper-3.2.7.min.css"/>-->
+		<!--<link rel="stylesheet" type="text/css" href="css/load.css"/>-->
+		<link rel="stylesheet" type="text/css" href="https://apitst.inm.cc/showyearinner/css/yearshow/yearshow.css"/>
+	</head>
+	<body>
+		<div class="wrap swiper-container">
+			<div class="swiper-wrapper">
+				<div class="level chapter swiper-slide">
+					<div class="title">
+						<img src="https://apitst.inm.cc/showyearinner/img/yearshow/level/title.png"/>
+					</div>
+					<div class="identity">
+						<div class="treasure">
+							<p>截至2017年12月15日</p>
+							<p class="pointer">卡里有<span class="timer count-title count-number-point" id="count-number" data-to="0" data-speed="1500">0</span>积分</p>
+							<p>在&nbsp;<span>"鸣布斯"</span>&nbsp;积分</p>
+							<p>排行榜里,你是</p>
+						</div>
+					</div>
+					<div class="register">
+						<div class="register-date">
+							<p>
+								<span class="timer count-title count-number-year" id="count-number" data-to="0" data-speed="1500">0</span>年
+								<span class="timer count-title count-number-month" id="count-number" data-to="0" data-speed="1500">0</span>月
+								<span class="timer count-title count-number-day" id="count-number" data-to="0" data-speed="1500">0</span>日&nbsp;成为奶吧会员
+							</p>
+						</div>
+						<div class="register-day-num">
+							<p>在奶吧星球里&nbsp;你&nbsp;已经居住了</p>
+							<p><span class="timer count-title count-number-all-day" id="count-number" data-to="0" data-speed="1500">0</span>个日夜</p>
+						</div>
+						<div class="register-pie">
+							<div id="piechart" class="piechart"></div>
+						</div>
+					</div>
+					<!--<div class="u-arrow-bottom">
+						<div class="pre-wrap-bottom">
+							<div class="pre-box1">
+								<div class="pre1">
+									
+								</div>
+							</div>
+							<div class="pre-box2">
+								<div class="pre2">
+									
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div class="drink chapter swiper-slide">
+					<div class="title">
+						<img src="https://apitst.inm.cc/showyearinner/img/yearshow/drink/title.png"/>
+					</div>
+					<div class="drink-sort">
+						<div class="drink-sort-title">
+							<p>这一年,你咕噜咕噜喝掉了</p>
+						</div>
+						<div class="drink-sort-list drink-sort-pure">
+							<p class=""><span class="pure-num">0</span><span class="pure-symbol">X</span></p>
+							<img class="pure-img" src="https://apitst.inm.cc/showyearinner/img/yearshow/drink/pure.png"/>
+							<p class="pure-unit">L牛奶</p>
+						</div>
+						<div class="drink-sort-list drink-sort-sour">
+							<p class=""><span class="sour-num">0</span><span class="sour-symbol">X</span></p>
+							<img class="sour-img" src="https://apitst.inm.cc/showyearinner/img/yearshow/drink/sour.png"/>
+							<p class="sour-unit">L酸奶</p>
+						</div>
+						<div class="drink-sort-list drink-sort-bowl">
+							<p class="bowl-unit absolute">相当于</p>
+							<p class=""><span class="bowl-num">0</span><span class="bowl-symbol">X</span></p>
+							<img class="bowl-img" src="https://apitst.inm.cc/showyearinner/img/yearshow/drink/bowl.png"/>
+							<p class="bowl-unit">个饭碗的量</p>
+						</div>
+						<div class="drink-level">
+							<img src=""/>
+						</div>
+					</div>
+					<!--<div class="u-arrow-bottom">
+						<div class="pre-wrap-bottom">
+							<div class="pre-box1">
+								<div class="pre1">
+									
+								</div>
+							</div>
+							<div class="pre-box2">
+								<div class="pre2">
+									
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div class="favorite chapter swiper-slide">
+					<div class="title">
+						<img src="https://apitst.inm.cc/showyearinner/img/yearshow/favorite/title.png"/>
+					</div>
+					<div class="favorite-sort">
+						<p class="">其中</p>
+						<div class="favorite-milk">
+							<p class="favorite-milk-name">--</p>
+						</div>
+						<p>是最让你倾心的牛奶</p>
+						<div class="favorite-img">
+							<img src="https://apitst.inm.cc/showyearinner/img/yearshow/favorite/favorite-img.png"/>
+						</div>
+						<div class="favorite-else">
+							<p class="favorite-else-name"><span></span>&nbsp;<span></span></p>
+						</div>
+						<p>是你最常搭配的牛奶伴侣</p>
+					</div>
+					<!--<div class="u-arrow-bottom">
+						<div class="pre-wrap-bottom">
+							<div class="pre-box1">
+								<div class="pre1">
+									
+								</div>
+							</div>
+							<div class="pre-box2">
+								<div class="pre2">
+									
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div class="attitude chapter swiper-slide">
+					<div class="attitude-title">
+						<img src="https://apitst.inm.cc/showyearinner/img/yearshow/attitude/title.png"/>
+					</div>
+					<div class="attitude-sort">
+						<p class="attitude-sort-txt"><span class="attitude-sort-changetxt">这一年你只青睐过</span><span class="favor-product-num">0</span>款产品</p>
+						<div class="attitude-sort-img">
+							<!--<img src="https://apitst.inm.cc/showyearinner/img/yearshow/attitude/attitude-deep.png"/>-->
+							<img src=""/>
+							<!--<img src="https://apitst.inm.cc/showyearinner/img/yearshow/attitude/attitude-lovely.png"/>-->
+						</div>
+					</div>
+					<div class="attitude-max">
+						<div class="attitude-max-title">
+							<img src="https://apitst.inm.cc/showyearinner/img/yearshow/attitude/attitude-max-title.png"/>
+						</div>
+						<div class="attitude-max-date">
+							<p><span class="attitude-max-year">--</span>.<span class="attitude-max-month">-</span>.<span class="attitude-max-day">-</span></p>
+						</div>
+						<div class="attitude-max-txt">
+							<p>这是一年内你在奶吧消费最阔绰的一次</p>
+							<p>腼腆的你,是想给家人朋友更多爱,</p>
+							<p>还是心情大好准备犒劳自己</p>
+						</div>
+						
+					</div>
+					<!--<div class="u-arrow-bottom">
+						<div class="pre-wrap-bottom">
+							<div class="pre-box1">
+								<div class="pre1">
+									
+								</div>
+							</div>
+							<div class="pre-box2">
+								<div class="pre2">
+									
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div class="consume chapter swiper-slide">
+					<!--<div></div>-->
+					<div class="consume-title">
+						<img src="https://apitst.inm.cc/showyearinner/img/yearshow/consume/title.png"/>
+					</div>
+					<!--<p class="consume-txt">2017年,在奶吧不下50次的促销中</p>-->
+					<p class="consume-join-times"><span>0</span></p>
+					<!--<p class="consume-use-points"><span>0</span></p>-->
+					<p class="consume-save-money"><span>0</span></p>
+					<div class="consume-level">
+						<img src=""/>
+					</div>
+					<!--<div class="u-arrow-bottom">
+						<div class="pre-wrap-bottom">
+							<div class="pre-box1">
+								<div class="pre1">
+									
+								</div>
+							</div>
+							<div class="pre-box2">
+								<div class="pre2">
+									
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<div class="keyword chapter swiper-slide">
+					<div class="keyword-title">
+						<img src="https://apitst.inm.cc/showyearinner/img/yearshow/keyword/title.png"/>
+					</div>
+					<div class="keyword-img">
+						<img src=""/>
+					</div>
+					<div class="keyword-summary">
+						<ul class="keyword-summary-list">
+							<li class="summary-date">
+								<img src="https://apitst.inm.cc/showyearinner/img/yearshow/keyword/summary-date.png"/>
+							</li>
+							<li class="summary-txt">
+								<p>你在一鸣真鲜奶吧用会员卡</p>
+							</li>
+							<li class="summary-times">
+								<img src="https://apitst.inm.cc/showyearinner/img/yearshow/keyword/summary-times.png"/>
+								<p>消费了<span id="summary-times">0</span>次</p>
+							</li>
+							<li class="summary-points">
+								<img src="https://apitst.inm.cc/showyearinner/img/yearshow/keyword/summary-points.png"/>
+								<p>累积了<span id="summary-points">0</span>个积分</p>
+							</li>
+							<li class="summary-txt">
+								<p>2017年你在奶吧倾注的热情打败了</p>
+							</li>
+							<li class="summary-beyond">
+								<img src="https://apitst.inm.cc/showyearinner/img/yearshow/keyword/summary-beyond.png"/>
+								<p><span id="summary-beyond">0</span>的会员</p>
+							</li>
+							<!--<li class="distance-txt">
+								<p>你最后一次来奶吧：</p>
+							</li>-->
+							<!--<li class="distance-day"><p>
+								<span class="distance-year-num">--</span>年<span class="distance-month-num">-</span>月<span class="distance-day-num">-</span>日</p></li>-->
+						</ul>
+					</div>
+					<!--<div class="u-arrow-bottom">
+						<div class="pre-wrap-bottom">
+							<div class="pre-box1">
+								<div class="pre1">
+									
+								</div>
+							</div>
+							<div class="pre-box2">
+								<div class="pre2">
+									
+								</div>
+							</div>
+						</div>
+					</div>-->
+				</div>
+				<!--<div class="end chapter swiper-slide">
+					<div class="my-ticket">
+						<p>最后想说</p>
+						<p>你上一次来奶吧</p>
+						<p>距离2017年12月15日</p>
+						<p class="distance-day">已经有<span id="distance-day">158</span>天</p>
+						<p>2018一起继续吃饱喝好</p>
+						<p>点击领取你新一年的牛奶票吧</p>
+						<div class="ticket-btn">
+							<img src="https://apitst.inm.cc/showyearinner/img/yearshow/end/ticket-btn.png"/>
+						</div>
+					</div>
+					<div class="share-wrap">
+						<a class="share-btn" href="javascript:void(0)">
+							<img src="https://apitst.inm.cc/showyearinner/img/yearshow/end/share-btn.png"/>
+						</a>
+					</div>
+				</div>-->
+				<div class="summary chapter swiper-slide">
+					<div class="summary-title">
+						<img src="https://apitst.inm.cc/showyearinner/img/yearshow/shareout/title.png"/>
+					</div>
+					<div class="summary-key">
+						<ul class="key-list clearfix">
+							<li class="summary-list1">--</li>
+							<li class="summary-list2">--</li>
+							<li class="summary-list3">--</li>
+							<li class="summary-list4">--</li>
+							<li class="summary-list5">--</li>
+							<li class="summary-list6">--</li>
+						</ul>				
+					</div>
+					<div class="summary-txt">
+						<p>2017年你的奶吧热情打败了&nbsp;<span class="summary-percent">-</span>&nbsp;的用户</p>
+					</div>
+					<div class="summary-sort">
+						<div class="ticket">
+							<a class="ticket-get" href="javascript:void(0)"><img src="https://apitst.inm.cc/showyearinner/img/yearshow/shareout/ticket-get.png"/></a>
+						</div>
+						<!--<div class="share">
+							<a class="cut-share" href="javascript:void(0)"><img src="https://apitst.inm.cc/showyearinner/img/yearshow/shareout/cut-share.png"/></a>
+						</div>-->
+						<div class="ercode">
+							
+							<a href="javascript:void(0)"><img src="https://apitst.inm.cc/showyearinner/img/yearshow/shareout/ercode.png"/></a>
+
+						</div>
+						<div class="scan">
+							<p>扫一扫查看你的2017牛奶面包账单</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<!--loading-->
+		<div class="load-wrap">
+			<img src="https://apitst.inm.cc/showyearinner/img/loading.gif"/>
+		</div>
+		
+		<div id="somedialog" class="dialog dialog--open">
+			<!--<div class="dialog__overlay"></div>-->
+			<div class="dialog__content">
+				<div class="bgtxt">
+					<img src="https://apitst.inm.cc/showyearinner/img/bg-txt.png"/>
+				</div>
+				<div class="bgpeople">
+					<img src="https://apitst.inm.cc/showyearinner/img/bg-people.png"/>
+				</div>
+				<div class="phonnum">
+					<input type="text" id="j_phone" placeholder="输入手机号码" />
+				</div>
+				<div class="verifycode">
+					<input type="text" class="phone"><label for=""></label>
+					<div id="j_getVerifyCode" class="getverify-code-btn">获取验证码</div>
+				</div>
+				<div class="detail-btn">
+					<a class="detail-btn-a" href="javascript:void(0)"><img src="https://apitst.inm.cc/showyearinner/img/detail-btn.png"/></a>
+				</div>
+			</div>
+		</div>
+		<!--<div class="successTips">
+			
+			<div class="successTips_overlay">
+				<img src="img/loading.gif"/>
+				<p>奶票到账</p>
+			</div>
+		</div>-->
+		
+		<script type="text/javascript">
+//		alert(window.screen.availHeight);
+//		alert(window.screen.height);
+//		alert(window.screen.availHeight);
+			(function (doc, win) {
+				var docEl = doc.documentElement
+					resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+					recalc = function () {
+						var clientHeight = docEl.clientHeight;
+						if (!clientHeight) return;
+						if (clientHeight >= 667) {
+							docEl.style.fontSize = '100px';
+						} else {
+							docEl.style.fontSize = 100 * (clientHeight / 667) + 'px';
+						}
+					};
+				
+				if (!doc.addEventListener) return;
+				win.addEventListener(resizeEvt, recalc, false);
+				doc.addEventListener('DOMContentLoaded', recalc, false);
+			})(document, window);
+		</script>
+		<script src="https://apitst.inm.cc/showyearinner/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="swiper/js/swiper-3.2.7.min.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="https://apitst.inm.cc/showyearinner/js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://apitst.inm.cc/showyearinner/js/yearshow.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://apitst.inm.cc/showyearinner/js/TimerButton.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function (){
+				/*TimerButton是一个对象，该对象中有两个方法，一个是SecondCountDown，该方法的作用是精确倒计时。普通的使用setInterval倒计时会存在一定的偏差，特别是当我们切换窗口时，而SecondCountDown解决了这个误差问题（具体用法见timedown.html）。
+				另一个方法是verify，该方法的作用是实现按钮倒计时的功能，有了这个按钮倒计时就可以实现获取验证码倒计时的功能*/
+				console.log(timerButton);
+	
+				var btn = $("#j_getVerifyCode");
+				timerButton.verify("#j_getVerifyCode", {
+					time: 10,//倒计时时间
+		            event: "click",//事件触发方式
+		            //执行条件，可以是function也可以是Boolean值，如果是函数则需返回true才会执行
+		            condition: function () {
+		            	var phoneReg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1})|(17[0-9]{1})|(14[0-9]{1}))+\d{8})$/,
+		            		flag = phoneReg.test($("#j_phone").val());
+		            	if(!flag){
+	//	            		alert("电话号码填写不正确！");
+							util.successTips("请正确输入手机号码");
+		            		return false;
+		            	}
+		            	return true;
+		            },
+		            unableClass: "unabled",//按钮不能使用时的class
+		            runningText: "s再获取",//计时正在进行中时按钮显示的文字
+		            timeUpText: "重新获取",//时间到了时按钮显示的文字
+		            progress: function (time) {//计时正在进行中时的回调
+		            	btn.html(time + "s再获取");
+		            	//console.log(this);//这里的this指向按钮
+		            	//console.log(this.timedown);//这个timedown就是计时器
+		            },
+		            timeUp: function (time) {//计时结束时执行的回调
+		            	btn.html("重新获取");
+		            	console.log("计时结束时执行的回调");
+		            	//console.log(this);//这里的this指向按钮
+		            },
+		            abort: function () {//中断计时
+		            	btn.html("重新获取");
+		            	//console.log("我被中断了！");
+		            	//console.log(this);//这里的this指向按钮
+		            },
+		            eventFn: function () {//事件执行后的回调
+		            	var phone = $("#j_phone").val();
+		            	console.log(phone);
+//		            	console.log("事件执行后的回调");
+		            	//console.log(this);//这里的this指向按钮
+		            	$.ajax({
+		            		type:"get",
+		            		//url:"http://inmyearshow.inm.cc:7002/api/InmAppPhone/PushSms?phone=18300708687",
+		            		url:"https://inmyearshow.inm.cc:7002/api/InmAppPhone/PushSms?phone="+phone,
+							//data:{'phone':"18300708687"},
+		            		async:true,
+		            		headers: {
+								"Accept": "application/json;charset=utf-8",
+								"contentType": "application/json;charset=utf-8"
+							},
+							success: function(info) {
+								console.log(info);
+								if(info!==null&&info!==''){
+									if(info.Status == 1){
+										util.successTips(info.Msg);
+									}else{
+										util.successTips(info.Msg);
+									}
+								}else{
+									util.successTips('此号码暂未注册');
+									document.getElementById("j_getVerifyCode").timedown.abort();
+								}
+							},
+							error:function(){
+								util.successTips('服务器异常');
+							}
+		            	});
+		            }
+				});
+//				中断计时
+//				$("#abort_btn").on("click", function (){
+//					document.getElementById("j_getVerifyCode").timedown.abort();
+//				});
+			});
+//			console.log($('.swiper-slide').height())
+		</script>
+	</body>
+</html>

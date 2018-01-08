@@ -1,0 +1,956 @@
+@charset "utf-8";
+@font-face {
+	font-family:'FAITHANDGLORYONE';
+	src: url('https://apitst.inm.cc/showyearinner/css/FAITHANDGLORYONE.OTF');
+}
+body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; color: #333; }
+body,html{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling:touch;
+	overflow-scrolling:touch;
+}
+body{
+	background-color: #fee504;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+ul { padding-left: 0; list-style-type: none; }
+a { text-decoration: none; color: inherit; }
+.clearfix:after{content:".";display:block;height:0;line-height: 0;clear:both;overflow:hidden;visibility:hidden;}
+.clearfix{zoom:1;}
+.floatleft{float:left;}
+.floatright{float:right;}
+.center{text-align:center;}
+.left{text-align:left;}
+.right{text-align:right;}
+.relative{position:relative;}
+.absolute{position:absolute;}
+.pointer{cursor:pointer;}
+.clear{clear:both;}
+.hide{display:none;}
+body .absolute,body .absolute img{
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+   user-select: none;
+}
+.wrap{
+	width: 100%;
+	/*height: 100%;*/
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.wrap .chapter{
+	/*padding: .1rem;*/
+	position: relative;
+	overflow: hidden;
+	/*padding-top: 20px;*/
+}
+/*page1 积分财富等级*/
+.level{
+	/*padding: .1rem;*/
+}
+.level .title,.drink .title,.favorite .title{
+	width: 1.25rem;
+	height: .43rem;
+	margin-left: .2rem;
+	margin-top: .2rem;
+}
+.level .title img,.drink .title img,.favorite .title img{
+	width: 100%;
+	display: block;
+}
+.level .identity{
+	position: relative;
+	/*margin-left: .3rem;*/
+	width: 3.22rem;
+	height: 2.4rem;
+	/*background: url(https://apitst.inm.cc/showyearinner/img/yearshow/level/rich-level3/img-rich.png) no-repeat center center;*/
+	background-size:auto 100%;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.level .treasure{
+	width: 1.7rem;
+	height: .9rem;
+	padding-top: .1rem;
+}
+.level .treasure p{
+	font-size: .16rem;
+	line-height: .2rem;
+	/*text-indent: .1rem;*/
+}
+.level .treasure .pointer span{
+	font-size: .3rem;
+	font-family: FAITHANDGLORYONE;
+	letter-spacing: 2px;
+}
+.level .treasure .pointer{
+	line-height: .3rem;
+}
+/*.level .level-sort {
+	width: 1.7rem;
+}*/
+.level .register{
+	width: 3.54rem;
+	height: 3.5rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/level/register-bg.png) no-repeat left top;
+	background-size: 100%;
+	border-top: 1px solid transparent;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.level .register .register-date{
+	width: 2.96rem;
+	height: .4rem;
+	margin-top: 0.35rem;
+    margin-left: .3rem;
+    border-bottom: 1px dashed #3f3f3f;
+}
+.level .register .register-date p{
+	font-size: .16rem;
+}
+.level .register .register-date p span{
+	font-size: .3rem;
+	font-family: FAITHANDGLORYONE;
+	letter-spacing: 2px;
+}
+.level .register .register-day-num{
+	width: 2.96rem;
+	height: .99rem;
+	margin-top: 0.1rem;
+    margin-left: .3rem;
+    border-bottom: 1px dashed #3f3f3f;
+}
+.level .register .register-day-num p{
+	font-size: .16rem;
+}
+.level .register .register-day-num p span{
+	font-size: .54rem;
+	font-family: FAITHANDGLORYONE;
+	letter-spacing: 2px;
+}
+.level .register .register-pie{
+	width: 2.96rem;
+	height: 1.65rem;
+	overflow: hidden;
+	margin-left: .3rem;
+}
+.level .register .register-pie .piechart{
+	width: 100%;
+	height: 100%;
+}
+/*page2 喝了多少奶 所在等级*/
+.drink {
+}
+.drink .title img{
+	display: block;
+	width: 100%;
+}
+.drink-sort{
+	width: 2.84rem;
+    /*height: 2.98rem;*/
+    background: url(https://apitst.inm.cc/showyearinner/img/yearshow/drink/drink-bg.png) no-repeat left top;
+    background-size: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    padding: .5rem .3rem 0 .3rem;
+}
+.drink .drink-sort-title p{
+	font-size: .16rem;
+	text-align: center;
+}
+.drink .drink-sort-list{
+	width: 80%;
+	margin-left: 5%;
+    border-bottom: 1px dashed #3f3f3f;
+}
+.drink .drink-sort-pure,.drink .drink-sort-sour,.drink .drink-sort-bowl{
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	/*justify-content: center;*/
+	padding-left: .36rem;
+	line-height: .5rem; 
+}
+.drink .drink-sort-pure .pure-num,.drink .drink-sort-sour .sour-num,.drink .drink-sort-bowl .bowl-num{
+	font-size: .5rem;
+	font-family: FAITHANDGLORYONE;
+}
+.drink .drink-sort-pure .pure-symbol,.drink .drink-sort-sour .sour-symbol,.drink .drink-sort-bowl .bowl-symbol{
+	font-size: .2rem;
+	margin-left: 4px;
+}
+.drink .drink-sort-pure .pure-unit,.drink .drink-sort-sour .sour-unit,.drink .drink-sort-bowl .bowl-unit{
+	font-size: .12rem;
+	margin-top: .4rem;
+    line-height: .12rem;
+}
+.drink .drink-sort-pure .pure-img,.drink .drink-sort-sour .sour-img,.drink .drink-sort-bowl .bowl-img{
+	display: block;
+	width:.54rem;
+	
+}
+.drink .drink-sort-bowl{
+    border-bottom: none;
+    position: relative;
+}
+.drink .drink-sort-bowl .absolute{
+    left: -.1rem;
+    top: .14rem;
+}
+.drink .drink-level{
+	width: 2.98rem;
+	/*height: 2.60rem;*/
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top: .3rem;
+}
+.drink .drink-level img{
+	width: 100%;
+}
+/*第三页 最爱的牛奶和面包*/
+.favorite .favorite-sort{
+	margin-top: .5rem;
+}
+.favorite .favorite-sort p{
+	font-size: .18rem;
+	text-align: center;
+	line-height: .22rem;
+	padding: .14rem 0;
+}
+.favorite .favorite-milk,.favorite .favorite-else{
+	width: 3.08rem;
+	height: .72rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/favorite/favorite-bg.png) no-repeat left top;
+	background-size: 100%;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    line-height:.72rem;
+    text-align: center;
+}
+.favorite .favorite-milk p,.favorite .favorite-else p{
+	line-height: .46rem;
+}
+.favorite .favorite-img{
+	width: 50%;
+	margin-left: 25%;
+}
+.favorite .favorite-img img{
+	width: 100%;
+	display: block;
+}
+.favorite .favorite-else{
+	margin-top: .14rem;
+}
+/*第四页 attitude 对食物用情程度*/
+.attitude .attitude-title{
+	width: 2.5rem;
+	margin-top: .2rem;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.attitude .attitude-title img{
+	display: block;
+	width: 100%;
+}
+.attitude-sort{
+	width: 3.42rem;
+	height: 2.37rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/attitude/attitude-bg.png) no-repeat left top;
+	background-size: 100%;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top: .25rem;
+    padding-top: .3rem ;
+}
+.attitude-sort .attitude-sort-txt{
+	font-size: .2rem;
+	text-align: center;
+	font-family: FAITHANDGLORYONE;
+}
+.attitude-sort .attitude-sort-txt span.favor-product-num{
+	font-size: .5rem;
+	line-height: .5rem;
+	font-family: FAITHANDGLORYONE;
+	display: inline-block;
+}
+.attitude-sort .attitude-sort-img{
+	width: 70%;
+	margin-left: 15%;
+}
+.attitude-sort .attitude-sort-img img{
+	width: 100%;
+	margin: 0 auto;
+}
+.attitude .attitude-max{
+	width: 2.64rem;
+	/*height: 2.49rem;*/
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.attitude .attitude-max .attitude-max-title{
+	width: 1.66rem;
+	margin-left: .2rem;
+}
+.attitude .attitude-max .attitude-max-title img{
+	width: 100%;
+	display: block;
+}
+.attitude .attitude-max .attitude-max-date{
+	width: 2.53rem;
+	height: 1.32rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/attitude/attitude-date-bg.png) no-repeat left top;
+	background-size: 100%;
+	border-bottom: 1px dashed #3f3f3f;
+	padding-bottom: .1rem;
+	text-align: left;
+	line-height: 1.5rem;
+	font-size: .5rem;
+	font-family: FAITHANDGLORYONE;
+}
+.attitude .attitude-max .attitude-max-date p{
+	margin-left: .36rem;
+}
+.attitude .attitude-max .attitude-max-txt p{
+	text-align: left;
+	font-size: .14rem;
+	line-height: .28rem;
+}
+/*第五页 消费次数*/
+.consume-title{
+	width: 100%;
+	height: 2.69rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/consume/consume-title-bg.png) no-repeat left top;
+	background-size: 100%;
+	background-position: left bottom;
+	padding-top: .2rem;
+}
+.consume .consume-title img{
+	display: block;
+	width: 2.5rem;
+	/*margin-top: .1rem;*/
+	margin: 0rem auto;
+}
+.consume p{
+	height: .4rem;
+	width: ;
+	line-height: .4rem;
+	font-size: .17rem;
+}
+.consume p.consume-txt{
+	text-align: center;
+}
+.consume p span{
+	line-height: .72rem;
+	font-size: .5rem;
+	font-family: FAITHANDGLORYONE;
+	
+}
+.consume .consume-join-times,.consume .consume-use-points,.consume .consume-save-money{
+	margin-left: .57rem;
+    /*transform: translateX(-50%);*/
+    height: .6rem;
+}
+.consume .consume-join-times{
+	width: 2.84rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/consume/join-times-bg.png) no-repeat left top;
+    background-size: 100%;
+}
+.consume .consume-join-times span{
+	display: inline-block;
+	margin-left: 2rem;
+}
+.consume .consume-use-points{
+	width: 1.74rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/consume/use-points-bg.png) no-repeat left top;
+	background-size: 100%;
+}
+.consume .consume-use-points span{
+	display: inline-block;
+	margin-left: .72rem;
+}
+.consume .consume-save-money{
+	width: 2.84rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/consume/save-money-bg.png) no-repeat left top;
+	background-size: 100%;
+}
+.consume .consume-save-money span{
+	display: inline-block;
+	margin-left: 1.9rem;
+}
+.consume .consume-level{
+	width: 2.65rem;
+	margin-left: .67rem;
+	/*margin-left: 50%;
+    transform: translateX(-50%);*/
+}
+.consume .consume-level img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+/*第六页 关键词*/
+.keyword .keyword-title{
+	width: 3.6rem;
+	margin-top: .2rem;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.keyword .keyword-title img{
+	width: 100%;
+	display: block;
+}
+.keyword .keyword-img{
+	width: 2.8rem;
+	height: 1.6rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/keyword/keyword-img-bg.png) no-repeat left top;
+	background-size: 100%;
+	padding-bottom: .2rem;
+	border-bottom: 1px dashed #3f3f3f;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top: .2rem;
+}
+.keyword .keyword-img img{
+	width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+.keyword .keyword-summary{
+	width: 2.83rem;
+	/*height: 2.91rem;*/
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    /*margin-top: .25rem;*/
+}
+.keyword .keyword-summary .keyword-summary-list li{
+	/*line-height: .49rem;*/
+	width: 2.83rem;
+	height: .35rem;
+	margin-top: .12rem;
+	margin-bottom: .12rem;
+	display: flex;
+	display: -webkit-flex;
+}
+.keyword .keyword-summary .keyword-summary-list p{
+	margin-left: .05rem;
+	font-size: .17rem;
+}
+.keyword .keyword-summary .keyword-summary-list p span{
+	font-size: .5rem;
+	font-family: FAITHANDGLORYONE;
+}
+
+.keyword .keyword-summary .keyword-summary-list img{
+	width: 100%;
+	display: block;
+}
+.keyword .keyword-summary .summary-times img{
+	width: 1.2rem;
+}
+.keyword .keyword-summary .summary-times p{
+	margin-top: -.2rem;
+}
+.keyword .keyword-summary .summary-points img{
+	width: .78rem;
+}
+.keyword .keyword-summary .summary-points p{
+	margin-top: -.2rem;
+}
+.keyword .keyword-summary .summary-beyond img{
+	width: 1.45rem;
+}
+.keyword .keyword-summary .summary-beyond p{
+	margin-top: -.2rem;
+}
+.keyword .keyword-summary .distance-day p{
+	/*margin-top: -.2rem;*/
+	margin-left: 1.3rem;
+    margin-top: -.2rem;
+}
+/*end结束页面 领取票券 点击分享*/
+.end .my-ticket{
+	width: 3.12rem;
+	height: 5.22rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/end/my-ticket-bg.png) no-repeat left top;
+	background-size: 100%;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top: .42rem;
+    padding-top: 1rem;
+}
+.end .my-ticket p{
+	font-size: .13rem;
+	line-height: .27rem;
+	text-align: center;
+}
+.end .my-ticket p span{
+	font-size: .5rem;
+	font-family: FAITHANDGLORYONE;
+}
+.end .my-ticket .distance-day{
+	line-height: .66rem;
+}
+.end .my-ticket .ticket-btn{
+	width: 1.54rem;
+	height: .44rem;
+	margin-left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    margin-top: .85rem;
+}
+.end .my-ticket .ticket-btn img{
+	width: 100%;
+	display: block;
+}
+.end .share-wrap{
+	position: absolute;
+    bottom: 0;
+    width: 50%;
+    left: 25%;
+}
+.end .share-wrap a{
+	display: block;
+	text-decoration:none
+}
+.end .share-wrap a:focus{
+	outline:0;
+}
+.end .share-btn img{
+	width: 100%;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+    user-select: none;
+}
+/*最后一页 分享 领卷 截图*/
+.summary{
+	width: 100%;
+	height: 100%;
+}
+.summary img{
+	display: block;
+}
+.summary-title{
+	width: 3.18rem;
+	height: .4rem;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	margin-top: .2rem;
+}
+.summary-title img{
+	width: 100%;
+}
+.summary-key{
+	width: 100%;
+	height: 1.26rem;
+	margin-top: .12rem;
+}
+.summary-key .key-list{
+	font-size: .14rem;
+	position: relative;
+}
+.summary-key .key-list li{
+	position: absolute;
+	text-align: center;
+	line-height: .3rem;
+	height: .3rem;
+	/*margin-top: .1rem;*/
+}
+
+.summary-key .key-list li:nth-of-type(1){
+	width: 1.26rem;
+	left: -.1rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/shareout/summary-list1.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.summary-key .key-list li:nth-of-type(2){
+	width: 1.7rem;
+	left: 1.2rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/shareout/summary-list2.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.summary-key .key-list li:nth-of-type(3){
+	width: 1.4rem;
+	left: 2.94rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/shareout/summary-list3.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.summary-key .key-list li:nth-of-type(4){
+	width: 2.9rem;
+	left: -.1rem;
+	top: .4rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/shareout/summary-list4.png) no-repeat left top;
+	background-size: 100% 100%;
+	margin-top: .05rem;
+}
+.summary-key .key-list li:nth-of-type(5){
+	width: 1.7rem;
+	left: 2.84rem;
+	top: .4rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/shareout/summary-list2.png) no-repeat left top;
+	background-size: 100% 100%;
+	margin-top: .05rem;
+}
+.summary-key .key-list li:nth-of-type(6){
+	width: 2.2rem;
+    left: .2rem;
+	top: .8rem;
+	background: url(https://apitst.inm.cc/showyearinner/img/yearshow/shareout/summary-list4.png) no-repeat left top;
+	background-size: 100% 100%;
+	margin-top: .05rem;
+}
+.summary-txt{
+	/*margin-top: .24rem;*/
+}
+.summary-txt p{
+	font-size: .16rem;
+	text-align: center;
+	line-height: .4rem;
+}
+.summary-txt p span{
+	font-size: .5rem;
+	font-family: FAITHANDGLORYONE;
+}
+.summary-sort{
+	width: 3.25rem;
+	height: 3.8rem;
+	position: relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	/*background: url(https://apitst.inm.cc/showyearinner/img/yearshow/shareout/integrallevel5.png) no-repeat center top;
+	background-size: 100%;*/
+	
+}
+.summary-sort>div{
+	position: absolute;
+}
+.ticket img ,.share img,.ercode img{
+	width: 100%;
+	display: block;
+}
+.ercode a,.ticket a,.share a
+{
+	display: block;
+}
+.ticket{
+	width: 1.39rem;
+	top: 50%;
+	
+}
+.share{
+	width: 1.39rem;
+	top: 50%;
+	margin-top: .48rem;
+}
+.ercode{
+	width: .65rem;
+	top: 50%;
+	margin-top: 1rem;
+	right: 0;
+}
+.scan{
+	bottom: .1rem;
+	right: 0;
+}
+.scan p{
+	font-size: .14rem;
+	text-align: center;
+	line-height: .14rem;
+}
+
+/*加载遮罩层*/
+.load-wrap{
+	position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: -webkit-flex;
+    background: #fee504;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+	.load-wrap img{
+	display: block;
+    width: 50%;
+    /*height: 1rem;
+    border-radius: 10%;*/
+}
+	/*横屏提示遮罩层*/
+	.indexct_tips {
+	top: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(40, 40, 40, 0.8);
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    z-index: 9999;
+}
+
+.indexct_tips_overlay {
+    position: fixed;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.indexct_tips p {
+    margin: 0 0 15px;
+    color: #FFFFFF;
+    z-index: 10000;
+    font-size: 16px;
+    display: block;
+    line-height: 25px;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 5px;
+    -webkit-margin-end: 5px;
+}
+
+.indexct_tips a {
+    color: #FFFFFF;
+}
+/*领取成功或否提示*/
+.successTips{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.successTips .successTips_overlay{
+	width: 100%;
+	height: 100%;
+	/*background: rgba(0, 0, 0, .6);*/
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.successTips .successTips_overlay img{
+	display: block;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10%;
+}
+.successTips .successTips_overlay p{
+	font-size: .18rem;
+    background: #fff;
+    padding: .1rem .2rem;
+    /*height: .9rem;*/
+    border-radius: 2%;
+    text-align: center;
+    line-height: .4rem;
+    background: rgba(10, 10, 10, .6);
+    /*background: #888829db;*/
+    color: #f3e6e6;
+}
+/*提示箭头*/
+.u-arrow-bottom {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 150;
+    width: 24px;
+    height: 14px;
+    margin-left: -7px;
+}
+.pre-wrap-bottom {
+    width: 24px;
+    height: 14px;
+    position: relative;
+    -webkit-animation: start 1.5s infinite ease-in-out;
+    animation: start 1.5s infinite ease-in-out;
+}
+@-webkit-keyframes start{
+	0%, 30% {
+    opacity: 0;
+    transform: translateY(10px);
+	}
+	60% {
+	    opacity: 1;
+	    transform: translate(0);
+	}
+	
+	100% {
+	    opacity: 0;
+	    transform: translateY(-8px);
+	}
+}
+@keyframes start{
+	0%, 30% {
+    opacity: 0;
+    transform: translateY(10px);
+	}
+	
+	60% {
+	    opacity: 1;
+	    transform: translate(0);
+	}
+	
+	
+	100% {
+	    opacity: 0;
+	    transform: translateY(-8px);
+	}
+}
+.pre-box1, .pre-box2 {
+    height: 15px;
+    width: 11px;
+    position: absolute;
+    top: -5px;
+    overflow: hidden;
+}
+.pre-box2 {
+    left: 10px;
+}
+.pre1, .pre2 {
+    background-color: #fff;
+    width: 14px;
+    height: 5px;
+    border-radius: 2px;
+    position: absolute;
+    box-shadow: 1px -1px 1px #646464;
+    top: 5px;
+}
+.pre1 {
+    transform: rotate(130deg);
+    -webkit-transform: rotate(130deg);
+    left: 1px;
+}
+.pre2 {
+    left: -4.5px;
+    -webkit-transform: rotate(50deg);
+    transform: rotate(50deg);
+}
+/*用于区分老旧用户 是否需要填写手好吗查看账单*/
+
+#somedialog{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: #fece24;
+	/*background: url(https://apitst.inm.cc/showyearinner/img/bg.png) no-repeat left top;
+	background-size: 100%;*/
+}
+.dialog__content{
+	width: 100%;
+	height: 100%;
+}
+.bgtxt{
+	height: 24%;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.bgtxt img{
+	display: block;
+	height: 100%;
+}
+.bgpeople {
+	height: 35%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+}
+.bgpeople img{
+	display: block;
+	height: 100%;
+}
+.phonnum,.verifycode,.detail-btn{
+	position: absolute;
+	width: 2.45rem;
+	height: .5rem;
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+}
+.phonnum{
+	top: 66%;
+}
+.phonnum input{
+	width: 90%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: url(https://apitst.inm.cc/showyearinner/img/phonnumber.png) no-repeat center bottom;
+	background-size: 100% 100%;
+	display: block;
+	padding-left: 10%;
+	font-size: .18rem;
+	/*text-align: center;*/
+}
+.verifycode{
+	top: 76%;
+	background: url(https://apitst.inm.cc/showyearinner/img/verifycodebg.png) no-repeat left top;
+	background-size: 100% 100%;
+}
+.verifycode .phone{
+	display: block;
+	float: left;
+	width: 40%;
+	border: none;
+    outline: none;
+    height: 100%;
+    padding-left: 10%;
+    background-color: transparent;
+}
+.verifycode .getverify-code-btn{
+	float: left;
+	width: 50%;
+	font-size: .14rem;
+    height: 100%;
+	line-height: .5rem;
+	text-align: center;
+	color: #FFFFFF;
+}
+.detail-btn{
+	top: 86%;
+}
+.detail-btn a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.detail-btn a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}

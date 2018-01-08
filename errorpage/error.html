@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/error.css"/>
+	</head>
+	<body>
+		<div class="error">
+			<div class="reload">
+				<a href="javascript:void(0)" onclick="relink()"><img src="img/reload-btn.png"/></a>
+				<a href="javascript:void(0)" onclick="backapp()"><img src="img/clos-btn.png"/></a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function relink(){
+				window.location.href = "../yearshow.html?appCard="+ getQueryString();
+				
+			}
+			function backapp(){
+				var ua = navigator.userAgent.toLowerCase();
+				if(ua.match(/Android/i) == "android"){
+						window.inmjump.finish();
+					}else if(ua.match(/iPhone\sOS/i) == "iphone os") {
+						location.href = "iosclose";
+					}else{
+						return
+					}
+				}
+			
+			function getQueryString() {
+		        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		        var r = window.location.href.split("=");
+		        if (r != null) return unescape(r[1]);
+		        return null;
+   			}
+		</script>
+	</body>
+</html>
